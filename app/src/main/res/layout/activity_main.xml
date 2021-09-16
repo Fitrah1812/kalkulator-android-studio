@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextBil1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextBil2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBagi"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:onClick="operasi2"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/btnKali"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:onClick="operasi2"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/btnKurang"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:onClick="operasi2"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="operasi2"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+    </LinearLayout>
+
+</LinearLayout>
